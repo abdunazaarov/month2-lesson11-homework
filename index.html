@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rentals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto pl-[16px] pr-[16px]">
+
+        <header class="flex justify-between items-center p-4 sm:p-6">
+            <div class="flex items-center space-x-2 sm:space-x-4">
+                <img src="./assets/logo.svg" alt="" class="w-8 h-8 sm:w-10 sm:h-10">
+                <span class="text-xl sm:text-2xl font-bold text-blue-900">fleet</span>
+                <select class="bg-white border border-gray-300 text-gray-700 py-1 px-2 sm:py-2 sm:px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    <option>USA</option>
+                    <option>UK</option>
+                    <option>France</option>
+                    <option>Germany</option>
+                </select>
+            </div>
+
+            <div class="flex items-center space-x-4 sm:space-x-6">
+                <nav>
+                    <ul class="flex space-x-2 sm:space-x-6 nav-links max-[1025px]:hidden">
+                        <li><a href="#" class="text-gray-700 text-sm sm:text-base">Travelers</a></li>
+                        <li><a href="#" class="text-gray-700 text-sm sm:text-base">Support</a></li>
+                        <li><a href="#" class="text-gray-700 text-sm sm:text-base">Language</a></li>
+                        <li><a href="#" class="text-gray-700 text-sm sm:text-base">List your property</a></li>
+                    </ul>
+                </nav>
+                <img src="./assets/logo.svg" alt="" class="w-6 h-6 sm:w-8 sm:h-8 rounded-full">
+            </div>
+        </header>
+
+        <section class="relative bg-cover bg-center h-64 sm:h-screen" style="background-image: url('./assets/hero.png');">
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        </section>
+
+        <section class="relative z-20 h-28 sm:h-32 md:h-40 -mt-16 sm:-mt-24">
+            <div class="max-w-4xl mx-auto bg-white p-4 sm:p-6 rounded-lg shadow-lg">
+                <div class="flex flex-col md:flex-row space-y-2 sm:space-y-4 md:space-y-0 md:space-x-4">
+                    <div class="flex-1">
+                        <label for="pickup-location" class="block text-gray-600 text-sm sm:text-base">Pickup location</label>
+                        <input type="text" id="pickup-location" placeholder="Where are you?" class="mt-1 p-1 sm:p-2 border rounded w-full focus:outline-none">
+                    </div>
+                    <div class="flex-1">
+                        <label for="pickup-date" class="block text-gray-600 text-sm sm:text-base">Pickup date</label>
+                        <input type="date" id="pickup-date" class="mt-1 p-1 sm:p-2 border rounded w-full focus:outline-none">
+                    </div>
+                    <div class="flex-1">
+                        <label for="return-date" class="block text-gray-600 text-sm sm:text-base">Return date</label>
+                        <input type="date" id="return-date" class="mt-1 p-1 sm:p-2 border rounded w-full focus:outline-none">
+                    </div>
+                    <div class="flex items-end">
+                        <button class="bg-blue-700 text-white px-4 py-2 sm:px-8 sm:py-3 rounded-full w-full md:w-auto">Search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-8 sm:mt-12 overflow-x-auto max-[768px]:mt-[200px]">
+            <h2 class="text-xl sm:text-2xl font-bold text-center mb-4 sm:mb-6">Popular destinations</h2>
+            <div class="flex space-x-4 sm:space-x-6">
+                <div class="text-center min-w-[150px] sm:min-w-[200px]">
+                    <img src="./assets/paris.png" alt="" class="w-full rounded-lg">
+                    <p class="mt-2 text-gray-700 text-sm sm:text-base">Paris</p>
+                </div>
+                <div class="text-center min-w-[150px] sm:min-w-[200px]">
+                    <img src="./assets/london.png" alt="" class="w-full rounded-lg">
+                    <p class="mt-2 text-gray-700 text-sm sm:text-base">London</p>
+                </div>
+                <div class="text-center min-w-[150px] sm:min-w-[200px]">
+                    <img src="./assets/ams.png" alt="" class="w-full rounded-lg">
+                    <p class="mt-2 text-gray-700 text-sm sm:text-base">Amsterdam</p>
+                </div>
+                <div class="text-center min-w-[150px] sm:min-w-[200px]">
+                    <img src="./assets/paris.png" alt="" class="w-full rounded-lg">
+                    <p class="mt-2 text-gray-700 text-sm sm:text-base">Paris</p>
+                </div>
+                <div class="text-center min-w-[150px] sm:min-w-[200px]">
+                    <img src="./assets/london.png" alt="" class="w-full rounded-lg">
+                    <p class="mt-2 text-gray-700 text-sm sm:text-base">London</p>
+                </div>
+                <div class="text-center min-w-[150px] sm:min-w-[200px]">
+                    <img src="./assets/ams.png" alt="" class="w-full rounded-lg">
+                    <p class="mt-2 text-gray-700 text-sm sm:text-base">Amsterdam</p>
+                </div>
+                <div class="text-center min-w-[150px] sm:min-w-[200px]">
+                    <img src="./assets/paris.png" alt="" class="w-full rounded-lg">
+                    <p class="mt-2 text-gray-700 text-sm sm:text-base">Paris</p>
+                </div>
+                <div class="text-center min-w-[150px] sm:min-w-[200px]">
+                    <img src="./assets/london.png" alt="" class="w-full rounded-lg">
+                    <p class="mt-2 text-gray-700 text-sm sm:text-base">London</p>
+                </div>
+                <div class="text-center min-w-[150px] sm:min-w-[200px]">
+                    <img src="./assets/ams.png" alt="" class="w-full rounded-lg">
+                    <p class="mt-2 text-gray-700 text-sm sm:text-base">Amsterdam</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex flex-col md:flex-row items-center justify-between bg-white p-6 sm:p-12 rounded-lg shadow-lg mt-8">
+            <div class="flex-1 mb-6 md:mb-0">
+                <h2 class="text-2xl sm:text-4xl font-bold mb-4">Rent a car in minutes with Fleet</h2>
+                <p class="text-gray-600 text-sm sm:text-base mb-6">
+                    Stacks is a production-ready library of stackable content blocks built in React Native.
+                </p>
+                <input type="text" placeholder="Enter your phone number" class="p-2 sm:p-3 border rounded w-full max-w-xs sm:max-w-md focus:outline-none">
+            </div>
+            <div class="flex-1">
+                <img src="./assets/phone.png" alt="" class="w-full h-auto">
+            </div>
+        </section>
+
+        <section class="mt-12 sm:mt-16 mb-6">
+            <h2 class="text-xl sm:text-2xl font-bold text-center mb-4 sm:mb-6">Explore nearby</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[32px]">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="./assets/london.png" alt="" class="w-full h-56 ">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">London</h3>
+                        <p class="text-gray-600 text-sm">Car rentals in 86 pickup locations</p>
+                        <p class="text-gray-700 font-bold mt-2">From $540 per day</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="./assets/paris.png" alt="" class="w-full h-56 ">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Paris</h3>
+                        <p class="text-gray-600 text-sm">Car rentals in 86 pickup locations</p>
+                        <p class="text-gray-700 font-bold mt-2">From $540 per day</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="./assets/ams.png" alt="" class="w-full h-56">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Amsterdam</h3>
+                        <p class="text-gray-600 text-sm">Car rentals in 86 pickup locations</p>
+                        <p class="text-gray-700 font-bold mt-2">From $540 per day</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="./assets/london.png" alt="" class="w-full h-56 ">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">London</h3>
+                        <p class="text-gray-600 text-sm">Car rentals in 86 pickup locations</p>
+                        <p class="text-gray-700 font-bold mt-2">From $540 per day</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="./assets/paris.png" alt="" class="w-full h-56">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Paris</h3>
+                        <p class="text-gray-600 text-sm">Car rentals in 86 pickup locations</p>
+                        <p class="text-gray-700 font-bold mt-2">From $540 per day</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="./assets/ams.png" alt="" class="w-full h-56">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Amsterdam</h3>
+                        <p class="text-gray-600 text-sm">Car rentals in 86 pickup locations</p>
+                        <p class="text-gray-700 font-bold mt-2">From $540 per day</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="./assets/london.png" alt="" class="w-full h-56">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">London</h3>
+                        <p class="text-gray-600 text-sm">Car rentals in 86 pickup locations</p>
+                        <p class="text-gray-700 font-bold mt-2">From $540 per day</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="./assets/paris.png" alt="" class="w-full h-56">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Paris</h3>
+                        <p class="text-gray-600 text-sm">Car rentals in 86 pickup locations</p>
+                        <p class="text-gray-700 font-bold mt-2">From $540 per day</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="./assets/ams.png" alt="" class="w-full h-56">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Amsterdam</h3>
+                        <p class="text-gray-600 text-sm">Car rentals in 86 pickup locations</p>
+                        <p class="text-gray-700 font-bold mt-2">From $540 per day</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
